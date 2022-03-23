@@ -62,7 +62,13 @@ export default {
 }
 li {
   display: inline-block;
-  padding: 1rem;
+  padding: 48px 1rem;
+  height: 100%;
+  border-bottom: 5px solid transparent;
+
+  &:hover {
+    border-bottom: 5px solid #0282f9;
+  }
   a {
     text-decoration: none;
     color: #0282f9;

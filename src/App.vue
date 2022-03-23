@@ -1,13 +1,12 @@
 <template>
   <div id="app">
-    <HeaderDC msg="Welcome to Your Vue.js App" />
-    <MainDC msg="Welcome to Your Vue.js App" />
-    <FooterDC msg="Welcome to Your Vue.js App" />
+    <HeaderDC />
+    <MainDC />
+    <FooterDC />
   </div>
 </template>
 
 <script>
-/* eslint-disable */
 import HeaderDC from "./components/HeaderDC.vue";
 import MainDC from "./components/MainDC.vue";
 import FooterDC from "./components/FooterDC.vue";
@@ -23,6 +22,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./assets/styles/partials/reset.scss";
+
 #app {
   font-family: Roboto, sans-serif;
 }

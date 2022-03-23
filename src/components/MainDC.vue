@@ -28,19 +28,19 @@ export default {
         },
         {
           img: "buy-comics-merchandise.png",
-          text: "digital comics",
+          text: "dc merchandise ",
         },
         {
           img: "buy-comics-shop-locator.png",
-          text: "digital comics",
+          text: "subscription ",
         },
         {
           img: "buy-comics-subscriptions.png",
-          text: "digital comics",
+          text: "comic shop locator",
         },
         {
           img: "buy-dc-power-visa.svg",
-          text: "digital comics",
+          text: "dc power visa",
         },
       ],
     };
