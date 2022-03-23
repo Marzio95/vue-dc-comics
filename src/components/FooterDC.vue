@@ -170,10 +170,11 @@ img {
 ul {
   color: white;
   list-style: none;
-  font: bold;
+  margin: 1rem;
 }
 h3 {
   font-size: 1.5rem;
+  margin-bottom: 0.8rem;
 }
 li {
   padding: 0.15rem;

@@ -54,7 +54,6 @@ export default {
 <style scoped lang="scss">
 .container {
   width: 80%;
-  height: 120px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -62,16 +61,18 @@ export default {
 }
 li {
   display: inline-block;
-  padding: 48px 1rem;
+  padding: 47px 1rem;
   height: 100%;
-  border-bottom: 5px solid transparent;
+  border-bottom: 7px solid transparent;
 
   &:hover {
-    border-bottom: 5px solid #0282f9;
+    border-bottom: 7px solid #0282f9;
+  }
+  &:hover a {
+    color: #0282f9;
   }
   a {
     text-decoration: none;
-    color: #0282f9;
     font-weight: bold;
   }
 }
