@@ -1,6 +1,8 @@
 <template>
   <div class="contenitore">
-    <div class="jumbo"></div>
+    <div class="jumbo">
+      <div class="current">CURRENT SERIES</div>
+    </div>
     <div class="row">
       <div class="container2">
         <CardDC
@@ -10,6 +12,7 @@
           :card-text="element.series"
         >
         </CardDC>
+        <div class="center"><button class="load">LOAD MORE</button></div>
       </div>
     </div>
     <div class="row_blue">
@@ -153,6 +156,19 @@ export default {
   height: 400px;
   background-image: url(../assets/img/jumbotron.jpg);
   background-position-x: center;
+  position: relative;
+}
+.current {
+  background-color: #0282f9;
+  width: 12rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  color: white;
+  text-align: center;
+  font-weight: 800;
+  position: absolute;
+  bottom: -1.25rem;
+  left: 5rem;
 }
 .row {
   background-color: black;
@@ -178,7 +194,7 @@ export default {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  padding: 2rem 0;
+  padding: 3rem 0;
   gap: 1rem;
 }
 ul {
@@ -201,5 +217,20 @@ img {
   width: 50px;
   height: 50px;
   object-fit: contain;
+}
+.center {
+  text-align: center;
+  width: 100%;
+}
+.load {
+  background: #0282f9;
+  border: none;
+  color: white;
+  height: 3rem;
+  width: 10rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 1rem;
 }
 </style>
