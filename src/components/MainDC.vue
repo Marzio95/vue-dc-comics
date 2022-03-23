@@ -1,13 +1,13 @@
 <template>
   <div class="contenitore">
     <div class="row">
-      <div class="container">Content goes here</div>
+      <div class="container2">Content goes here</div>
     </div>
     <div class="row_blue">
       <div class="container">
         <ul>
           <li v-for="(element, index) in arrayMainbar" :key="index">
-            <img :src="element.img" alt="" />
+            <img :src="require('../assets/img/' + element.img)" alt="" />
             <a href="#">{{ element.text.toUpperCase() }}</a>
           </li>
         </ul>
@@ -18,16 +18,28 @@
 
 <script>
 export default {
-  name: "Main",
+  name: "MainDC",
   data() {
     return {
       arrayMainbar: [
         {
-          img: '../assets/img/buy-comics-digital-comics.png',
+          img: "buy-comics-digital-comics.png",
           text: "digital comics",
         },
         {
-          img: 'buy-comics-digital-comics.png',
+          img: "buy-comics-merchandise.png",
+          text: "digital comics",
+        },
+        {
+          img: "buy-comics-shop-locator.png",
+          text: "digital comics",
+        },
+        {
+          img: "buy-comics-subscriptions.png",
+          text: "digital comics",
+        },
+        {
+          img: "buy-dc-power-visa.svg",
           text: "digital comics",
         },
       ],
@@ -50,17 +62,22 @@ export default {
   height: 120px;
   background-color: #0282f9;
   color: white;
+  display: flex;
+  justify-content: center;
 }
 .container {
-  width: 80%;
   margin: auto;
   height: 100%;
   display: flex;
   align-items: center;
 }
-ul{
-    display: flex;
-    list-style: none;
+.container2 {
+  width: 80%;
+  margin: auto;
+}
+ul {
+  display: flex;
+  list-style: none;
 }
 li {
   display: flex;
@@ -71,10 +88,12 @@ li {
     color: white;
     font-weight: bold;
     padding-left: 10px;
+    font-size: 0.8rem;
   }
 }
-img{
-    width: 60px;
-    height: 60px;
+img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
 }
 </style>

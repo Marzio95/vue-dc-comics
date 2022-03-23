@@ -1,29 +1,23 @@
 <template>
   <div id="app">
     <HeaderDC msg="Welcome to Your Vue.js App" />
-    <Main msg="Welcome to Your Vue.js App" />
-    <Footer msg="Welcome to Your Vue.js App" />
-
-
-
+    <MainDC msg="Welcome to Your Vue.js App" />
+    <FooterDC msg="Welcome to Your Vue.js App" />
   </div>
 </template>
 
 <script>
+/* eslint-disable */
 import HeaderDC from "./components/HeaderDC.vue";
-import Main from "./components/Main.vue";
-import Footer from "./components/Footer.vue";
-
-
-
-
+import MainDC from "./components/MainDC.vue";
+import FooterDC from "./components/FooterDC.vue";
 
 export default {
   name: "App",
   components: {
     HeaderDC,
-    Main,
-    Footer,
+    MainDC,
+    FooterDC,
   },
 };
 </script>

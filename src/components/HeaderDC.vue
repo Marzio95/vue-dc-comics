@@ -3,7 +3,7 @@
     <img src="../assets/img/dc-logo.png" alt="" />
     <ul>
       <li v-for="(element, index) in arrayNavbar" :key="index">
-        <a href="#">{{ element.text.toUpperCase() }}</a> 
+        <a href="#">{{ element.text.toUpperCase() }}</a>
       </li>
     </ul>
   </div>
@@ -45,7 +45,6 @@ export default {
         {
           text: "characters",
         },
-        
       ],
     };
   },
@@ -61,14 +60,13 @@ export default {
   align-items: center;
   justify-content: space-between;
 }
-li{
+li {
   display: inline-block;
   padding: 1rem;
-a{
-  text-decoration: none;
-  color: #0282f9;
-  font-weight: bold;
+  a {
+    text-decoration: none;
+    color: #0282f9;
+    font-weight: bold;
+  }
 }
-}
-
 </style>
